@@ -9,32 +9,33 @@
          <ul class="nav">
             <li><a href="favorites.html">My Favorite Things</a></li>
             <li><a href="experience.html">My Experience</a></li>
+            <li><a href="index.html">About Me</a></li>
         </ul>
         <h1>About Kallatt</h1>
         <p>My name is Kallatt Brown, I was born on April 29, 2000 in Chicago, IL. I am 16 years old. I am a junior at King College Prep HS. I am a very funny and goofy person.
         I like to hang out with my friends and play games like 2k. I love to spend time with my family. I'm interested in computer science & computer programming. A quick funfact about me is I taught myself how to do a backflip in the 2nd grade.</p>
-    <div>
-        <img class="myslides" src="images/IMG_1709.PNG" width="400"></img>
-        <img class="myslides" src="images/IMG_1710.PNG" width="400"></img>
-        <img class="myslides" src="images/IMG_1712.PNG" width="400"></img>
-        <img class="myslides" src="images/IMG_1690.JPG" width="400"></img>
-        <img class="myslides" src="images/IMG_1686.JPG" width="400"></img>
-        <img class="myslides" src="images/IMG_1238.JPG" width="400"></img>
-    </div>
+        <div class="slideshow" align="center">
+        <img class="myslides" src="images/IMG_1721.PNG" height="525" width="700"></img>
+        <img class="myslides" src="images/IMG_1719.PNG" height="525" width="700"></img>
+        <img class="myslides" src="images/IMG_1720.PNG" height="525" width="700"></img>
+        <img class="myslides" src="images/IMG_1690.JPG" width="700"></img>
+        <img class="myslides" src="images/IMG_1686.JPG" width="700"></img>
+        <img class="myslides" src="images/IMG_1238.JPG" width="700"></img>
+        </div>
         <script>
 var myIndex = 0;
 carousel();
 
 function carousel() {
     var i;
-    var x = document.getElementsByClassName("mySlides");
+    var x = document.getElementsByClassName("myslides");
     for (i = 0; i < x.length; i++) {
        x[i].style.display = "none";
     }
     myIndex++;
     if (myIndex > x.length) {myIndex = 1}
     x[myIndex-1].style.display = "block";
-    setTimeout(carousel, 2000); // Change image every 2 seconds
+    setTimeout(carousel, 5000); // Change image every 5 seconds
 }
 </script>
     </body>
