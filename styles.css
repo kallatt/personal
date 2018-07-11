@@ -1,12 +1,24 @@
 body {
-    background-image:url(images/IMG_1713.PNG);
+    background-image:url(http://www.no-zaku.com/background/wp-content/uploads/sites/9/2016/11/Nice-Free-Backgrounds-For-Websites.jpg);
     background-size: cover;
     background-position: center;
-    color: red;
+    color: white;
 }
 h1 {
     text-align: center;
-    font-size: 100px;
+    font-size: 75px;
+}
+h2 {
+    text-align: center;
+    font-size:40px;
+}
+h3 {
+    text-align:center;
+    font-size: 30px;
+}
+h4 {
+    text-align:center;
+    font-size:45px;
 }
 p {
     text-align: center;
@@ -17,34 +29,35 @@ a {
     text-decoration: none;
     color: red;
 }
-a:hover {
-    background-color: red;
-    border: 1px black solid;
-    color: black;
-}
 ul {
     font-size: 25px;
 }
 .nav {
     list-style-type: none;
-    margin: 0;
+    margin-top:-10px;
     padding: 0;
-    display: block;
-    width: 200px;
-    border: 1px red solid;
-    background-color: black;
-    text-align: center;
-    background: black;
-    border-radius: 6px
-    transition-property: background, border-radius;
-    transition-duration: 1s;
-    transition-timing-function: linear;
+    overflow: hidden;
+    background-color: #333;
+    font-size: 150%;
+    width:100%;
+    height:75px;
+    z-index:12;
 }
-.nav:hover {
-    border: 1px black solid;
-    color: black;
-    background: black;
-    border-radius: 50%;
+.nav li {
+    float:left;
+    display:inline-block;
+    margin-right:50px;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    height:50px;
+  line-height: 80px;
+  white-space: nowrap;
+  background-color:#333;
+  list-style-type:none;
 }
 .slideshow div {
     width:1100px;
@@ -53,53 +66,7 @@ ul {
 }
 .abc {
     text-align: center;
-    list-style: none;
-}
-.slide {
-    position:absolute;
+    list-style: circle;
+    list-style-position:inside;
 }
 
-.myslides:nth-child(1) {
-    -webkit-animation: fade 30s 0s infinite;
-    z-index:60;
-}
-
-.myslides:nth-child(2) {
-    -webkit-animation: fade 30s 5s infinite;
-    z-index:50;
-}
-
-.myslides:nth-child(3) {
-    -webkit-animation: fade 30s 10s infinite;
-    z-index:40;
-}
-
-.myslides:nth-child(4) {
-    -webkit-animation: fade 30s 15s infinite; 
-    z-index:30;
-}
-.myslides:nth-child(5) {
-    -webkit-animation: fade 30s 20s infinite; 
-    z-index:20;
-}
-.myslides:nth-child(6) {
-    -webkit-animation: fade 30s 25s infinite; 
-    z-index:10;
-}
-@-webkit-keyframes fade {
-    0%{
-      opacity: 1;
-   }
-   15% {
-      opacity:1;
-   }
-   25%{
-      opacity: 0;
-   }
-   90% {
-      opacity:0;
-   }
-   100% {
-      opacity:1;
-   }
-}
